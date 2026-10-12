@@ -1,0 +1,112 @@
+/* ==========================================================================
+   Inventory Module Custom Styles
+   ========================================================================== */
+
+/* Warning / Low Stock Badge */
+.badge-pending,
+.badge-warning {
+    background: rgba(245, 158, 11, 0.18);
+    color: #fbbf24;
+    border: 1px solid rgba(245, 158, 11, 0.3);
+}
+
+/* Part Number Monospace styling */
+.data-table code {
+    background: rgba(255, 255, 255, 0.06);
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+    font-size: 0.85rem;
+    color: var(--primary);
+    border: 1px solid var(--border);
+    font-family: monospace;
+}
+
+/* Modal helper text */
+.form-helper {
+    color: var(--muted);
+    font-size: 0.8rem;
+    font-weight: normal;
+}
+
+/* ==========================================================================
+   Tab Navigation
+   ========================================================================== */
+.inventory-tabs {
+    display: flex;
+    gap: 0.6rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1.25rem;
+    border-bottom: 2px solid #e5e7eb;
+    padding-bottom: 0.6rem;
+}
+
+.tab-link {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.6rem 1.2rem;
+    font-size: 0.88rem;
+    font-weight: 600;
+    color: #6b7280;
+    text-decoration: none;
+    border-radius: 8px;
+    background: #f3f4f6;
+    transition: all 0.2s ease;
+}
+
+.tab-link:hover {
+    color: #15803d;
+    background: #e5e7eb;
+}
+
+.tab-link.active {
+    background: #15803d;
+    color: #ffffff;
+}
+
+/* ==========================================================================
+   Search & Filter Toolbar
+   ========================================================================== */
+.inventory-toolbar {
+    display: flex;
+    gap: 0.8rem;
+    margin-bottom: 1.25rem;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.search-wrapper {
+    flex: 1;
+    min-width: 250px;
+}
+
+.search-input {
+    width: 100%;
+    padding: 0.65rem 1rem;
+    border-radius: 9999px;
+    border: 1.5px solid #e5e7eb;
+    outline: none;
+    font-size: 0.88rem;
+    background: #ffffff;
+    box-sizing: border-box;
+}
+
+.search-input:focus {
+    border-color: #15803d;
+    box-shadow: 0 0 0 2px rgba(21, 128, 61, 0.15);
+}
+
+.filter-select {
+    width: 100%;
+    padding: 0.65rem 1rem;
+    border-radius: 9999px;
+    border: 1.5px solid #e5e7eb;
+    outline: none;
+    font-size: 0.88rem;
+    background: #ffffff;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+.filter-select:focus {
+    border-color: #15803d;
+}

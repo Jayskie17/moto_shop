@@ -1,0 +1,191 @@
+/* ==========================================================================
+   Dashboard Module Specific Styles — Modern Industrial ERP
+   ========================================================================== */
+
+/* Topbar live system indicator */
+.topbar-live-status {
+    font-size: 0.85rem;
+    color: var(--muted);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.status-dot-pulse {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--secondary);
+    box-shadow: 0 0 0 2px rgba(23, 107, 75, 0.2);
+}
+
+.page-subtitle {
+    color: var(--muted);
+    font-size: 0.875rem;
+    margin-top: 2px;
+}
+
+/* Stat card highlights */
+.val-danger {
+    color: var(--danger) !important;
+}
+
+.val-success {
+    color: var(--secondary) !important;
+}
+
+/* 2-Column ERP Grid */
+.dashboard-erp-grid {
+    display: grid;
+    grid-template-columns: 1.65fr 1fr;
+    gap: 1.5rem;
+    align-items: start;
+    margin-top: 0.5rem;
+}
+
+@media (max-width: 1100px) {
+    .dashboard-erp-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* ERP Floating Cards */
+.erp-card {
+    background: var(--surface);
+    border-radius: var(--radius);
+    border: 1px solid var(--border);
+    box-shadow: var(--shadow-sm);
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.erp-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.25rem;
+    padding-bottom: 0.75rem;
+    border-bottom: 1px solid var(--border-light);
+}
+
+.erp-card-title {
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: var(--primary);
+    letter-spacing: -0.01em;
+}
+
+.erp-card-sub {
+    font-size: 0.78rem;
+    color: var(--muted);
+    margin-top: 2px;
+}
+
+.erp-card-link {
+    font-size: 0.8rem;
+    color: var(--secondary);
+    text-decoration: none;
+    font-weight: 600;
+    transition: opacity 0.15s ease;
+}
+
+.erp-card-link:hover {
+    opacity: 0.8;
+}
+
+/* Table Card Wrapper inside ERP card */
+.erp-table-wrap {
+    box-shadow: none;
+    border: 1px solid var(--border-light);
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.qty-danger {
+    color: var(--danger);
+    font-weight: 700;
+}
+
+/* Quick Operations */
+.erp-quick-actions {
+    display: flex;
+    gap: 0.75rem;
+    margin-bottom: 0.75rem;
+}
+
+.erp-quick-actions:last-child {
+    margin-bottom: 0;
+}
+
+.erp-quick-btn {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    background: var(--surface-low);
+    color: var(--primary);
+    padding: 0.75rem 1rem;
+    border-radius: 12px;
+    text-decoration: none;
+    font-size: 0.825rem;
+    font-weight: 600;
+    border: 1px solid var(--border);
+    transition: all 0.18s ease;
+}
+
+.erp-quick-btn:hover {
+    background: var(--primary);
+    color: #ffffff;
+    border-color: var(--primary);
+    transform: translateY(-1px);
+}
+
+/* Recent Transactions Activity Stream */
+.activity-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.85rem 0;
+    border-bottom: 1px solid var(--border-light);
+}
+
+.activity-item:last-child {
+    border-bottom: none;
+}
+
+.activity-invoice {
+    font-weight: 600;
+    font-size: 0.875rem;
+    color: var(--primary);
+}
+
+.activity-meta {
+    font-size: 0.75rem;
+    color: var(--muted);
+    margin-top: 2px;
+}
+
+.activity-amount {
+    font-weight: 700;
+    color: var(--primary);
+    font-family: 'JetBrains Mono', monospace;
+}
+
+.badge-paid {
+    font-size: 0.68rem;
+    padding: 0.15rem 0.55rem;
+    margin-top: 2px;
+}
+
+.empty-state-notice {
+    color: var(--muted);
+    font-size: 0.875rem;
+    text-align: center;
+    padding: 1.75rem 0;
+}

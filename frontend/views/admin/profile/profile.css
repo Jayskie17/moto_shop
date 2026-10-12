@@ -1,0 +1,123 @@
+/* ==========================================================================
+   Profile Module Custom Styles
+   ========================================================================== */
+.profile-card {
+    background: #ffffff;
+    border-radius: 18px;
+    border: 1px solid #e5e7eb;
+    padding: 2.25rem;
+    max-width: 650px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+}
+
+.profile-hero {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    padding-bottom: 1.75rem;
+    border-bottom: 1px solid #f3f4f6;
+    margin-bottom: 1.75rem;
+}
+
+.profile-avatar {
+    width: 68px;
+    height: 68px;
+    border-radius: 50%;
+    background: #15803d;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.85rem;
+    font-weight: 700;
+    box-shadow: 0 4px 10px rgba(21, 128, 61, 0.25);
+}
+
+.profile-hero-text h2 {
+    font-size: 1.35rem;
+    color: #111827;
+    margin: 0;
+    font-weight: 700;
+}
+
+.profile-badge-role {
+    display: inline-block;
+    background: #dcfce7;
+    color: #15803d;
+    padding: 0.2rem 0.75rem;
+    border-radius: 9999px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    margin-top: 0.4rem;
+    border: 1px solid #86efac;
+}
+
+.profile-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.profile-item label {
+    display: block;
+    font-size: 0.75rem;
+    color: #6b7280;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    margin-bottom: 0.35rem;
+}
+
+.profile-val {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: #1f2937;
+}
+
+.status-pill-active {
+    display: inline-block;
+    background: #dcfce7;
+    color: #15803d;
+    padding: 0.2rem 0.65rem;
+    border-radius: 6px;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.profile-logout-section {
+    border-top: 1px solid #f3f4f6;
+    padding-top: 1.75rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logout-title {
+    font-size: 0.92rem;
+    font-weight: 600;
+    color: #111827;
+}
+
+.logout-desc {
+    font-size: 0.8rem;
+    color: #6b7280;
+    margin-top: 0.15rem;
+}
+
+.btn-logout-confirm {
+    background: #fee2e2;
+    color: #b91c1c;
+    padding: 0.65rem 1.4rem;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 0.85rem;
+    text-decoration: none;
+    border: 1px solid #fca5a5;
+    transition: all 0.2s ease;
+}
+
+.btn-logout-confirm:hover {
+    background: #ef4444;
+    color: #ffffff;
+}

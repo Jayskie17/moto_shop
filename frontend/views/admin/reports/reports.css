@@ -1,0 +1,275 @@
+/* ==========================================================================
+   Admin Sales Analytics & Reports — Module Specific CSS
+   ========================================================================== */
+
+/* Filter Card & Quick Presets */
+.reports-filter-panel {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 1.25rem 1.5rem;
+    box-shadow: var(--shadow-sm);
+    margin-bottom: 1.75rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 1.25rem;
+}
+
+.filter-inputs {
+    display: flex;
+    align-items: flex-end;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.filter-inputs .form-group {
+    margin-bottom: 0;
+}
+
+.filter-inputs label {
+    display: block;
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: var(--muted);
+    margin-bottom: 0.35rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.quick-presets {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.preset-label {
+    font-size: 0.825rem;
+    font-weight: 600;
+    color: var(--muted);
+}
+
+.preset-btn {
+    background: var(--surface-low);
+    border: 1px solid var(--border);
+    color: var(--text);
+    padding: 0.45rem 0.85rem;
+    border-radius: var(--radius-sm);
+    font-size: 0.825rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.15s ease-in-out;
+}
+
+.preset-btn:hover {
+    background: var(--surface-high);
+}
+
+.preset-btn.active {
+    background: var(--secondary);
+    color: #ffffff;
+    border-color: var(--secondary);
+}
+
+/* Dual Column Layout (Ledger on Left, Insights on Right) */
+.reports-dual-layout {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 1.75rem;
+    align-items: start;
+    margin-top: 1.75rem;
+}
+
+/* Section Card */
+.section-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 1.5rem;
+    box-shadow: var(--shadow-sm);
+}
+
+.card-header-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.25rem;
+}
+
+.card-header-flex h3 {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--primary);
+}
+
+/* Table */
+.table-responsive {
+    overflow-x: auto;
+}
+
+.data-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.data-table th {
+    background: var(--surface-low);
+    color: var(--muted);
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    padding: 0.85rem 1rem;
+    border-bottom: 1px solid var(--border);
+}
+
+.data-table td {
+    padding: 0.95rem 1rem;
+    border-bottom: 1px solid var(--border-light);
+    font-size: 0.9rem;
+    color: var(--text);
+}
+
+.data-table tr:hover td {
+    background-color: var(--surface-low);
+}
+
+.text-right {
+    text-align: right;
+}
+
+.badge {
+    background: var(--secondary-container);
+    color: var(--secondary);
+    padding: 0.25rem 0.65rem;
+    border-radius: var(--radius-full);
+    font-size: 0.75rem;
+    font-weight: 700;
+}
+
+/* Ranking List (Top-Moving Parts) */
+.ranking-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.85rem;
+}
+
+.ranking-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.75rem;
+    background: var(--surface-low);
+    border-radius: var(--radius-sm);
+    border: 1px solid var(--border-light);
+}
+
+.ranking-rank {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background: var(--primary);
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.75rem;
+    font-weight: 700;
+    margin-right: 0.75rem;
+    flex-shrink: 0;
+}
+
+.ranking-info {
+    flex: 1;
+}
+
+.ranking-name {
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: var(--primary);
+}
+
+.ranking-meta {
+    font-size: 0.75rem;
+    color: var(--muted);
+}
+
+.ranking-stats {
+    text-align: right;
+}
+
+.ranking-units {
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: var(--secondary);
+}
+
+.ranking-rev {
+    font-size: 0.75rem;
+    color: var(--muted);
+}
+
+/* Category Breakdown */
+.category-breakdown-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.category-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.65rem 0;
+    border-bottom: 1px solid var(--border-light);
+}
+
+.category-row:last-child {
+    border-bottom: none;
+}
+
+.cat-title {
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: var(--text);
+}
+
+.cat-rev {
+    font-size: 0.875rem;
+    font-weight: 700;
+    color: var(--primary);
+}
+
+.mb-4 {
+    margin-bottom: 1.5rem;
+}
+
+/* Print Overrides */
+@media print {
+
+    .sidebar,
+    .topbar,
+    .reports-filter-panel,
+    .header-actions {
+        display: none !important;
+    }
+
+    .main-content {
+        padding: 0 !important;
+        margin: 0 !important;
+        background: #ffffff !important;
+    }
+
+    .section-card {
+        border: 1px solid #ccc !important;
+        box-shadow: none !important;
+    }
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+    .reports-dual-layout {
+        grid-template-columns: 1fr;
+    }
+}

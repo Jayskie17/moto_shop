@@ -1,0 +1,66 @@
+/* Inventory Reports Module Styles */
+.inv-reports-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.inv-reports-filter-card {
+    background: #FFFFFF;
+    padding: 1rem;
+    border-radius: 6px;
+    margin-bottom: 1.5rem;
+    display: flex;
+    gap: 1rem;
+}
+
+.inv-reports-table-card {
+    background: #FFFFFF;
+    border-radius: 6px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    overflow-x: auto;
+    padding: 1rem;
+}
+
+.inv-reports-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #FFFFFF;
+    border-radius: 6px;
+    overflow: hidden;
+    margin-top: 0;
+}
+
+.inv-reports-table th, 
+.inv-reports-table td {
+    padding: 1rem;
+    text-align: left;
+    border-bottom: 1px solid #E5E7EB;
+}
+
+.inv-reports-table th {
+    background-color: #111827;
+    color: #FFFFFF;
+    font-weight: 600;
+}
+
+@media print {
+    .sidebar, 
+    .topbar, 
+    .inv-reports-filter-card, 
+    .btn-print {
+        display: none !important;
+    }
+
+    .main-content {
+        padding: 0 !important;
+        margin: 0 !important;
+        background: #FFFFFF !important;
+    }
+
+    .inv-reports-table-card {
+        box-shadow: none !important;
+        padding: 0 !important;
+    }
+}

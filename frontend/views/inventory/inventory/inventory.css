@@ -1,0 +1,57 @@
+/* Inventory Products & Stock Module Styles */
+.inv-products-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.inv-products-table-card {
+    background: #FFFFFF;
+    border-radius: 6px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    overflow-x: auto;
+}
+
+.inv-products-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #FFFFFF;
+    border-radius: 6px;
+    overflow: hidden;
+    margin-top: 0;
+}
+
+.inv-products-table th, 
+.inv-products-table td {
+    padding: 1rem;
+    text-align: left;
+    border-bottom: 1px solid #E5E7EB;
+}
+
+.inv-products-table th {
+    background-color: #111827;
+    color: #FFFFFF;
+    font-weight: 600;
+}
+
+.inv-products-modal-content {
+    background: #FFFFFF;
+    padding: 2rem;
+    border-radius: 6px;
+    width: 100%;
+    max-width: 500px;
+    border-top: 5px solid #EF4444;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    max-height: 90vh;
+    overflow-y: auto;
+}
+
+.inv-readonly-input {
+    background-color: #F8F9FA !important;
+    cursor: not-allowed;
+}
+
+.inv-submit-btn {
+    margin-top: 1rem;
+}

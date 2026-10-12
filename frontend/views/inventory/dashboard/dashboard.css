@@ -1,0 +1,72 @@
+/* Inventory Analytics Dashboard Module Styles */
+.inv-dashboard-split-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+    align-items: start;
+}
+
+.inv-chart-card {
+    background: #FFFFFF;
+    padding: 1.5rem;
+    border-radius: 6px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.inv-card-title {
+    margin-bottom: 1rem;
+    color: #111827;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.inv-low-stock-card {
+    background: #FFFFFF;
+    padding: 1.5rem;
+    border-radius: 6px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.inv-minimal-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+}
+
+.inv-minimal-table th {
+    text-align: left;
+    background-color: #111827;
+    color: #FFFFFF;
+    font-weight: bold;
+    padding: 0.75rem;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    letter-spacing: 0.5px;
+}
+
+.inv-minimal-table td {
+    padding: 0.85rem 0.75rem;
+    border-bottom: 1px solid #E5E7EB;
+    color: #111827;
+}
+
+.inv-minimal-table tr:last-child td {
+    border-bottom: none;
+}
+
+.inv-stock-low {
+    color: #EF4444 !important;
+    font-weight: bold !important;
+}
+
+.inv-stock-normal {
+    color: #111827;
+    font-weight: bold;
+}
+
+@media (max-width: 900px) {
+    .inv-dashboard-split-grid {
+        grid-template-columns: 1fr;
+    }
+}

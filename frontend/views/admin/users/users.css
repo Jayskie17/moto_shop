@@ -1,0 +1,104 @@
+/* ==========================================================================
+   User Management Module Custom Styles
+   ========================================================================== */
+
+/* Role Badges */
+.badge-role {
+    font-size: 0.75rem;
+    font-weight: 600;
+    padding: 0.25rem 0.65rem;
+    border-radius: var(--radius-full);
+    display: inline-block;
+}
+
+.role-admin {
+    background: rgba(30, 39, 34, 0.1);
+    color: var(--primary);
+    border: 1px solid rgba(30, 39, 34, 0.2);
+}
+
+.role-cashier {
+    background: rgba(23, 107, 75, 0.12);
+    color: var(--secondary);
+    border: 1px solid rgba(23, 107, 75, 0.25);
+}
+
+.role-officer {
+    background: rgba(138, 86, 18, 0.12);
+    color: var(--warning);
+    border: 1px solid rgba(138, 86, 18, 0.25);
+}
+
+/* Modal Helper Text */
+.form-helper {
+    color: var(--muted);
+    font-size: 0.78rem;
+    font-weight: normal;
+}
+
+.btn-modal-submit {
+    width: 100%;
+    margin-top: 0.75rem;
+}
+
+/* ==========================================================================
+   Account Status Toggle Pill
+   ========================================================================== */
+.status-toggle-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.45rem;
+    padding: 0.35rem 0.85rem;
+    border-radius: 9999px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
+
+/* Active State */
+.status-toggle-pill.is-active {
+    background-color: #dcfce7;
+    color: #15803d;
+    border: 1px solid #86efac;
+}
+
+.status-toggle-pill.is-active .toggle-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #16a34a;
+    box-shadow: 0 0 0 2px rgba(22, 163, 74, 0.2);
+}
+
+.status-toggle-pill.is-active:hover:not(.is-locked) {
+    background-color: #bbf7d0;
+    transform: translateY(-1px);
+}
+
+/* Inactive State */
+.status-toggle-pill.is-inactive {
+    background-color: #fee2e2;
+    color: #b91c1c;
+    border: 1px solid #fca5a5;
+}
+
+.status-toggle-pill.is-inactive .toggle-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #dc2626;
+    box-shadow: 0 0 0 2px rgba(220, 38, 38, 0.2);
+}
+
+.status-toggle-pill.is-inactive:hover {
+    background-color: #fecaca;
+    transform: translateY(-1px);
+}
+
+/* Locked Admin State */
+.status-toggle-pill.is-locked {
+    cursor: default;
+    opacity: 0.9;
+}
